@@ -1,0 +1,9 @@
+/*carousel image resize*/
+.carousel-inner img{
+	height:80vh; 
+}
+
+/*card image resize*/
+.card img{
+	max-height:20rem; 
+}

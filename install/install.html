@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang=en> 
+	<head>
+    	<title>Installation Instructions</title>
+        <meta name="author" content="Juan Villalobos">
+        <meta name="date posted" content="17/04/2022">
+    </head>
+	<body>
+        <h1>Database and Website Installation Guide</h1>
+        <h2>Part 1: Setting up the database</h2>
+        <ol>
+            <li>Download project files from github in a zipped file
+                <br><img src="git.jpg">
+            </li>
+            <li>unzip file and extract contents to somewhere on your pc</li>
+            <li>log into myweb and go to the DirectAdmin web control panel, click on databases then click create new database
+                <br><img src="create.jpg">
+            </li>
+            <li>type the database credentials of your choosing: database name, user, password
+                <br><img src="credentials.jpg">
+            </li>
+            <li>click create database, memorize the credentials
+                <br><img src="remember.jpg">
+            </li>
+            <li>click php MyAdmin near the top right corner of the screen
+                <br><img src="myadmin.jpg">
+            </li>
+            <li>select the database and click on the import button in the top bar</li>
+            <li>click choose file and browse for the database sql file that was downloaded from github(db.sql)</li>
+            <li>select the sql file and click the go button near the bottom right corner of the import screen
+                <br><img src="import.jpg">
+            </li>
+        </ol>
+        <h2>Part 2: Setting up the Website and connecting to Database</h2>
+        <ol>
+            <li>the database has now been set up, you just need to import the remaining files to the public_html folder on myweb and modify databaseconnection.php</li>
+            <li>the database credentials in the database.connection.php file need to match the credentials of the database you created earlier
+                <br><img src="connect.jpg">
+            </li>
+        </ol>
+        <h2>Conclusion</h2>
+        <p>You are all set! Everything should be properly installed now. You can go to the site via x/y/PHP/home/index.php<br>Where x = your myweb site link and y = the folder you stored the project files in
+        <br> i.e. https://villaloj.myweb.cs.uwindsor.ca/test/PHP/home/index.php </p>        
+    </body>
+</html>

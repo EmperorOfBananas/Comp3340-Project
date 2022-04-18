@@ -1,0 +1,23 @@
+/*CSS variables*/
+:root{
+ --primary-color:#000000;
+}
+
+/*font family*/
+body{
+	font-family: 'Playfair Display', serif !important;
+}
+
+/*overwrite bootstrap design*/
+.nav-pills .btn-dark{
+  background-color:#FFFFFF;
+  box-shadow:none !important;
+}
+
+/*overwrite bootstrap design*/
+.nav-pills .btn-dark.active,.nav-pills .show>.btn
+{
+  background-color:var(--primary-color);
+  color:#FFFFFF !important;
+}
+
